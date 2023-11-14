@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/Persona.js"></script>
+  <script src="js/controladorMain.js"></script>
+</head>
+<body>
+  <div>
+    <div class="container mt-3">
+        <h2>Stacked form</h2>
+        <form action="javascript:crearObjeto();">
+          <div class="mb-3 mt-3">
+            <label for="cc">Documento de identidad:</label>
+            <input type="number" class="form-control" id="cc" placeholder="Número de Documento" name="email">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="id">Nombres y Apellidos:</label>
+            <input type="text" class="form-control" id="nombresApellidos" placeholder="Nombres y Apellidos" name="email">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="id">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
+          </div>
+          <div class="mb-3">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+          </div>
+          <div class="mb-3">
+            <label for="roles">Roles:</label>
+            <select name="" id="roles">
+              <option value="Administrativor">Administrativor</option>
+              <option value="Secretaria">Secretaria</option>
+              <option value="Vendedor">Vendedor</option>
+            </select>
+            
+          </div>
+          <div class="form-check mb-3">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Datos</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <h2>DataSet de los usuarios registrados</h2>
+      <table class="table" id="tableD">
+        <thead>
+          <tr>
+            <th>DI</th>
+            <th>Nombres y Apellidos</th>
+            <th>E-mail</th>
+            <th>Password</th>
+            <th>Rol</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>

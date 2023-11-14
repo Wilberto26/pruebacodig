@@ -1,0 +1,69 @@
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.container-fluid {
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    background-color: #ffc107;
+}
+
+.dropdown-menu{
+    background-color:aqua;
+}
+
+
+.nav-link{
+    color: #0d6efd;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.nav-item:hover{
+    color: white;
+}
+
+.images{
+    display: flex;
+    overflow: hidden;
+}
+
+.images img{
+    width: 20%;
+    margin: 10px;
+}
